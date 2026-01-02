@@ -1,6 +1,7 @@
 # project_mcu
 
 1장 ATmega128
+
 특징 : RISC 구조, 주소지정 모드(addressing mode)제공, ISP기능 등
 <img width="786" height="662" alt="image" src="https://github.com/user-attachments/assets/0744db93-1781-48b9-bccd-c3e30dded9c6" />
 <img width="826" height="453" alt="image" src="https://github.com/user-attachments/assets/2f39030d-f122-4b40-9ee2-80ca2da0c7b3" />
