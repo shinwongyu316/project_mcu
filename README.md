@@ -44,8 +44,8 @@
    - 상태레지스터(SREG) : 8bit -> <7bit>I(Global Interrupt Enable) <6bit>T(BitCopyStorage) <5bit>H(Half Carry Flag) <4bit>S(Sign Bit) <3bit>V(two'scomplementoverflowbit) <2bit>N(Negative Flag) <1bit>Z(Zero Flag) <0bit>C(Carry Flag)
    - stack pointer : LIFO구조이며, 마이크로컨트롤러응용에서 서브루틴이나 인터럽트발생 시에 복귀되는 주소를 임시로 기억하기 위해서 사용됨, 스택은 내부SRAM 영역 내에 존재
    - RAM 페이지 선택레지스터 : ATmega128 내부의 128K 바이트 플래시 프로그램 메모리에서 64K 바이트 단위로 구분되는 2개의 페이지 중에서 어는 것을 사용할지를 지정하는 역할.
-    -> RAMPZ=0 : 프로그램 메모리는0 페이지선택(0x0000~0x7FFF 영역)
-    -> RAMPZ=1 : 프로그램 메모리는1 페이지선택(0x8000~0xFFFF 영역)
+    - RAMPZ=0 : 프로그램 메모리는0 페이지선택(0x0000~0x7FFF 영역)
+    - RAMPZ=1 : 프로그램 메모리는1 페이지선택(0x8000~0xFFFF 영역)
      
 2. 메모리
    - program memory : 내부 128KB의 플래시메모리(ISP 플래시메모리)로 SPI 통신방식을 이용한 ISP 기능이나 JTAG 에뮬레이터, 병렬 프로그래밍방식을 통해 사용자 프로그램을 쉽게 기록할 수 있음.
