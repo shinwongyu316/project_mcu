@@ -8,11 +8,36 @@
 
  - ISP : MCU를 보드에 장착한 상태에서 SPI 등을 통해 프로그램을 바로 다운/수정하는 방식
 
- - SPI : 클럭을 기준으로 마스터-슬레이브가 MOSI/MISO로 고속데이터를 주고받는 동기 직렬 통신방식 
+ - SPI : 클럭을 기준으로 마스터-슬레이브가 MOSI/MISO로 고속데이터를 주고받는 동기 직렬 통신방식
+   
+ - 오실레이터 : 주기적인 전자 신호를 생성하는 필수 구성 요소로 DC 신호를 주기적인 AC 신호로 변환한다. 모든 마이크로컨트롤러와 마이크로프로세서는 기능을 수행하기 위해 클록 신호를 설정하는 오실레이터가 필요하다.
 
-
+ - PWM : 펄스 폭 변조(Pulse Width Modulation)의 약자로 Pulse-사각파, Width-폭, Modulation-변조로 사각파의 폭을 변화시키는 것이다. Duty Ratio를 조절하는것으로 자세한 설명은 아래 링크를 참조한다.
+   https://blog.naver.com/lagrange0115/222345576071
+   
 <img width="786" height="662" alt="image" src="https://github.com/user-attachments/assets/0744db93-1781-48b9-bccd-c3e30dded9c6" />
 <img width="826" height="453" alt="image" src="https://github.com/user-attachments/assets/2f39030d-f122-4b40-9ee2-80ca2da0c7b3" />
 <img width="822" height="435" alt="image" src="https://github.com/user-attachments/assets/42cc5240-e8c9-4b45-9bce-d7500e657df6" />
 <img width="833" height="413" alt="image" src="https://github.com/user-attachments/assets/afdf5d31-7433-4fac-9f62-4fd237551e38" />
+
+ - 내장 메모리
+    - 플래쉬 메모리, EEPROM SRAM
+ - I/O
+   - 2개의 8bit 타이머/카운터 + 확장 16bit 타이머/카운터
+   - 독립적인 오실레이터를 갖는 실시간 카운터(RTC)
+   - 6개의 PWM채널
+   - 8채널 10bit ADC
+   - 2개의 프로그램가능한 직렬 USARTs
+   - SPI, TWI 직렬 인터페이스
+   - 내장된 오실레이터로 구현된 프로그램 가능한 워치독 타이머
+   - 아날로그 비교기 내장
+   - 53개의 프로그램 가능한 입출력 I/O
+- 기타
+   - 8개의 외부 인터럽트, 27개의 내부 인터럽트
+   - 온칩 디버깅이 가능한 JTAG
+
+<img width="868" height="638" alt="image" src="https://github.com/user-attachments/assets/858c2f29-4d42-4ab0-8b21-287608194600" />
+
+
+
 
