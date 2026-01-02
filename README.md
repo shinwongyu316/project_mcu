@@ -51,10 +51,10 @@
    - program memory : 내부 128KB의 플래시메모리(ISP 플래시메모리)로 SPI 통신방식을 이용한 ISP 기능이나 JTAG 에뮬레이터, 병렬 프로그래밍방식을 통해 사용자 프로그램을 쉽게 기록할 수 있음.
    - data memory :
    - EEPROM : 쓰기/읽기는 I/O 레지스터를 사용하여 주소를 지정하는 방법으로 액세스가능
-     -> EEPROM의 제어
-      EEAR : EEPROM 주소 레지스터
-      EEDR : EEPROM 데이터 레지스터
-      EECR : EEPROM 제어 레지스터
+     - EEPROM의 제어
+      - EEAR : EEPROM 주소 레지스터
+      - EEDR : EEPROM 데이터 레지스터
+      - EECR : EEPROM 제어 레지스터
      
 3. 기타
    - 시스템 클럭
