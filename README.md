@@ -64,4 +64,23 @@
    - 워치독 타이머
 
 
+AVR - C
+
+
+Atmega128의 I/O port는 <iom128.h>에 저장 - SRAM
+
+0x20~0x5F : 64개의 I/O 레지스터
+ - _SFR_IO8, _SFR_IO16
+ - #define PINB  _SFR_IO8(0x16), #define DDRB  _SFR_IO8(0x17), #define PORTB  _SFR_IO8(0x18)
+
+0x60~0xFF : 160개의 확장 I/O 레지스터
+ - _SFR_MEM8, _SFR_MEM16
+
+-> 0x16, 0x17, 0x18은 avr에서 지정해 놓은 값이며, 임의로 수정할 수 없다. 또한 A~F 각 포트안에 있는 핀 0-7은 각각의 PIN(입력 레지스터), DDR(입출력 방향을 설정하는 레지스터), PORT(출력 레지스터)를 갖는다.
+
+<img width="928" height="500" alt="image" src="https://github.com/user-attachments/assets/b79ba3a7-12fc-4189-9369-4dec4bf2ea07" />
+
+
+
+
 
